@@ -1,0 +1,162 @@
+
+html{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: linear-gradient(to right, #D5DEE7 0%, #E8EBF2 50%, #E2E7ED 100%), linear-gradient(to right, rgba(0,0,0,0.02) 50%, rgba(255,255,255,0.02) 61%, rgba(0,0,0,0.02) 73%), linear-gradient(33deg, rgba(255,255,255,0.20) 0%, rgba(0,0,0,0.20) 100%);
+  background-blend-mode: normal,color-burn;
+}
+
+.wrap{
+  height: 570px;
+  width: 360px;
+  margin: 100px auto;
+  background: #f7f7f7;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+}
+
+h2 {
+  background: #1F1F1F;
+  color: white;
+  margin: 0;
+  padding: 20px 30px 18px;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: bold;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+p {
+  padding-left: 35px;
+}
+
+form input[type="text"] {
+  width: 90px;
+}
+
+input {
+  padding-left: 20px;
+}
+
+#billamt {
+  font-size: 14px;
+  margin-left: 35px;
+  /*color: #2980b9;*/
+  color: black;
+  background-color: #f7f7f7;
+  width: 60%;
+  padding: 5px 5px 8px 8px;
+  border: 0; 
+  border: 1px solid #ccc; 
+  position: relative; 
+  background: transparent;
+}
+#billamt:focus {
+  background: #fff;
+  border: 1px lightblue #2980b9;
+  outline: none;
+}
+
+#peopleamt {
+  font-size: 14px;
+  margin-left: 35px;
+  /*color: #2980b9;*/
+  color: black;
+  background-color: #f7f7f7;
+  width: 60%;
+  padding: 5px 5px 8px 8px;
+  border: 0; 
+  border: 1px solid #ccc; 
+  position: relative; 
+  background: transparent;
+}
+#peopleamt:focus {
+  background: #fff;
+  border: 1px lightblue #2980b9;
+  outline: none;
+}
+
+.dollarSign {
+  display: inline;
+}
+
+#serviceQual {
+  border: 0; 
+  border: 1px solid #ccc; 
+  position: relative; 
+  background-color: #f7f7f7;
+  padding: 8px 52px 10px 20px;
+  margin-left: 36px;
+  font-size: 15px;
+}
+#serviceQual:focus {
+  background: #fff;
+  border: 1px lightblue #2980b9;
+  outline: none;
+}
+
+button {
+  border-radius: 4px;
+  background-color: #2980b9;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 17px;
+  padding: 15px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 40px 80px;
+  margin-bottom: 20px;
+}
+
+button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+button:hover span {
+  padding-right: 25px;
+}
+
+button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+#totalTip {
+  font-size: 30px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+#totalTip:before {
+  content: "Tip amount";
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+  text-transform: uppercase;
+}
+
+#totalTip sup {
+  font-size: 20px;
+  top: -18px;
+}
+
+#totalTip small {
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+}
